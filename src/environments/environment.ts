@@ -1,3 +1,3 @@
 export const environment = {
-  API_URL: "//localhost:4200/api",
+  API_URL: "//airbnb-clone-stayhub-production.up.railway.app/api",
 };
