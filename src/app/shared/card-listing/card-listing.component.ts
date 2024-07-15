@@ -77,5 +77,4 @@ export class CardListingComponent {
     this.router.navigate(['listing'],
       {queryParams: {id: publicId}});
   }
-
 }
