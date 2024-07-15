@@ -76,8 +76,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "airbnb-clone-front:build",
-            "proxyConfig": "proxy.conf.mjs"
+            "buildTarget": "airbnb-clone-front:build"
           },
           "configurations": {
             "production": {

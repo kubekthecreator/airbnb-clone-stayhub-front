@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  API_URL: '/api', // To będzie przechwycone przez proxy
+  API_URL: '//airbnb-clone-stayhub-production.up.railway.app/api',
 };

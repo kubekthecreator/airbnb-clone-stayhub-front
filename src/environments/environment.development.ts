@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  API_URL: '/api', // To również będzie przechwycone przez proxy
+  API_URL: '//localhost:8080/api',
 };
