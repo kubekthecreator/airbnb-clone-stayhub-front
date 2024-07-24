@@ -2,6 +2,8 @@
   "name": "airbnb-clone-front",
   "version": "0.0.0",
   "scripts": {
+    "start": "ng serve --proxy-config proxy.conf.js",
+    "start:prod": "set BACKEND_URL=https://airbnb-clone-stayhub-production.up.railway.app && ng serve --proxy-config proxy.conf.js",
     "ng": "ng",
     "build": "ng build --configuration production",
     "build:dev": "ng build --configuration development",
@@ -24,6 +26,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "cors": "^2.8.5",
     "dayjs": "^1.11.11",
     "express": "^4.19.2",
     "leaflet": "^1.9.4",
