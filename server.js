@@ -1,17 +1,38 @@
 const express = require('express');
-const path = require('path');
-const proxy = require('http-proxy-middleware');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
-const apiProxy = proxy.createProxyMiddleware("/api", {
+const proxyTable = {
+  "/api": {
     target: process.env.BACKEND_URL || 'https://airbnb-clone-stayhub-production.up.railway.app/',
+    secure: true,
     changeOrigin: true
+  },
+  "/oauth2": {
+    target: process.env.BACKEND_URL || 'https://airbnb-clone-stayhub-production.up.railway.app/',
+    secure: true,
+    changeOrigin: true
+  },
+  "/login": {
+    target: process.env.BACKEND_URL || 'https://airbnb-clone-stayhub-production.up.railway.app/',
+    secure: true,
+    changeOrigin: true
+  },
+  "/assets": {
+    target: process.env.BACKEND_URL || 'https://airbnb-clone-stayhub-production.up.railway.app/',
+    secure: true,
+    changeOrigin: true
+  }
+};
+
+Object.keys(proxyTable).forEach(context => {
+  app.use(createProxyMiddleware(context, proxyTable[context]));
 });
-app.use(apiProxy);
-app.use(express.static(__dirname + "/dist/airbnb-clone-front/"));
+
+app.use(express.static(__dirname + "/dist/airbnb-clone-front/browser/"));
 
 app.get("/*", (req, res) => {
-    res.sendFile(__dirname + "/dist/airbnb-clone-front/browser/index.html")
+  res.sendFile(__dirname + "/dist/airbnb-clone-front/browser/index.html");
 });
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 4200);
