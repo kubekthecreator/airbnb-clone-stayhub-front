@@ -1,6 +1,18 @@
 {
   "/api": {
     "target": "http://localhost:8080",
-    "secure": false
+    "secure": true
+  },
+  "/oauth2": {
+    "target": "http://localhost:8080",
+    "secure": true
+  },
+  "/login": {
+    "target": "http://localhost:8080",
+    "secure": true
+  },
+  "/assets": {
+    "target": "http://localhost:8080",
+    "secure": true
   }
 }
