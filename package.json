@@ -2,8 +2,8 @@
   "name": "airbnb-clone-front",
   "version": "0.0.0",
   "scripts": {
-    "start": "ng serve --proxy-config proxy.conf.js",
-    "start:prod": "ng serve --proxy-config proxy.conf.js",
+    "start": "node server.js",
+    "dev": "ng serve --proxy-config proxy.config.json",
     "ng": "ng",
     "build": "ng build --configuration production",
     "build:dev": "ng build --configuration development",
