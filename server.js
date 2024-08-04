@@ -4,22 +4,22 @@ const app = express();
 
 const proxyTable = {
   "/api": {
-    target: process.env.BACKEND_URL || 'https://airbnb-clone-stayhub-production.up.railway.app/',
+    target: process.env.BACKEND_URL || 'http://airbnb-clone-stayhub-production.up.railway.app/',
     secure: true,
     changeOrigin: true
   },
   "/oauth2": {
-    target: process.env.BACKEND_URL || 'https://airbnb-clone-stayhub-production.up.railway.app/',
+    target: process.env.BACKEND_URL || 'http://airbnb-clone-stayhub-production.up.railway.app/',
     secure: true,
     changeOrigin: true
   },
   "/login": {
-    target: process.env.BACKEND_URL || 'https://airbnb-clone-stayhub-production.up.railway.app/',
+    target: process.env.BACKEND_URL || 'http://airbnb-clone-stayhub-production.up.railway.app/',
     secure: true,
     changeOrigin: true
   },
   "/assets": {
-    target: process.env.BACKEND_URL || 'https://airbnb-clone-stayhub-production.up.railway.app/',
+    target: process.env.BACKEND_URL || 'http://airbnb-clone-stayhub-production.up.railway.app/',
     secure: true,
     changeOrigin: true
   }
