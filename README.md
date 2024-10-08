@@ -21,21 +21,21 @@ To run the StayHub frontend locally:
    ```bash
    git clone https://github.com/kubekthecreator/airbnb-clone-stayhub-front.git
    cd airbnb-clone-stayhub-front```
+   
 2. **Install dependencies**:
-
 ```bash
 npm install
 ```
 
 3. **Start the development server**:
-
 ```bash
 ng serve
 ```
-4. **Access the application**:
 
-Open http://localhost:4200 in your browser.
-Contributing
+4. **Access the application**:
+- Open http://localhost:4200 in your browser.
+ 
+## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ## License
