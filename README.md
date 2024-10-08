@@ -1,27 +1,45 @@
-# AirbnbCloneFront
+# StayHub Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+This repository contains the **frontend** of the StayHub property rental platform, built with **Angular 17**. StayHub enables users to list, discover, and book accommodations around the world, providing a smooth and intuitive user experience.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Responsive User Interface**: Developed with **Angular 17**, ensuring a seamless and user-friendly experience across devices.
+- **Comprehensive Search and Filter System**: Allows users to filter properties by location, price, amenities, and more.
+- **User Authentication**: Integrated with **Auth0** for secure login and registration.
+- **Profile Management**: Users can update their profiles, manage bookings, and view reviews.
 
-## Code scaffolding
+## Related Repositories
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Backend Repository**: The backend of StayHub, built with **Spring Boot 3**, is available [here](https://github.com/kubekthecreator/airbnb-clone-stayhub).
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To run the StayHub frontend locally:
 
-## Running unit tests
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/kubekthecreator/airbnb-clone-stayhub-front.git
+   cd airbnb-clone-stayhub-front```
+2. **Install dependencies**:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm install
+```
 
-## Running end-to-end tests
+3. **Start the development server**:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng serve
+```
+4. **Access the application**:
 
-## Further help
+Open http://localhost:4200 in your browser.
+Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+For any inquiries or support, reach out to eryk.kubiak.firma@gmail.com.
